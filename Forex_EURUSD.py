@@ -98,7 +98,7 @@ rmse = np.sqrt(np.mean(predictions - y_test )**2 )
 
 
 #Get the quote (THIS IS MODEL PREDICTS - Dont change start datetime)
-##stock_quote = web.DataReader(pair, "av-forex-daily", start=datetime(2015, 2, 9), end=datetime(year, month, day), api_key=os.getenv('32DCAN0IGN5CIX13'))
+##stock_quote = web.DataReader(pair, "av-forex-daily", start=datetime(2015, 2, 9), end=datetime(year, month, day), api_key=os.getenv('XXXXXXXXXXXXX'))
 stock_quote, meta_data = fx.get_currency_exchange_intraday(cur1, cur2, '60min', 'full')
 stock_quote=stock_quote.iloc[::-1]
 #Create a new dataframe
@@ -136,7 +136,7 @@ from openpyxl import load_workbook
 new_row_data = [
     [date, time, pred_price, actual_price, rmse ]] 
 
-wb = load_workbook("C:/Users/Emily/OneDrive/AzureMLExcel/ForexStockMonitoring.xlsx")
+wb = load_workbook("C:/Users/XXXXX/OneDrive/AzureMLExcel/ForexStockMonitoring.xlsx")
 # Select  Worksheet no.
 ws = wb.worksheets[3]
 
@@ -145,6 +145,6 @@ for row_data in new_row_data:
     # Append Row Values
     ws.append(row_data)
 
-wb.save("C:/Users/Emily/OneDrive/AzureMLExcel/ForexStockMonitoring.xlsx")
+wb.save("C:/Users/XXXXXX/OneDrive/AzureMLExcel/ForexStockMonitoring.xlsx")
 #wb.save("MonitorAccuracy.xlsx")
 wb.close()
