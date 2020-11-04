@@ -11,7 +11,7 @@ import numpy as np
 import os
 from datetime import datetime
 from sklearn.tree import DecisionTreeClassifier
-os.environ["ALPHAVANTAGE_API_KEY"] = "32DCAN0IGN5CIX13"
+os.environ["ALPHAVANTAGE_API_KEY"] = "XXXXXXXXXXXXXXX"
 plt.style.use('fivethirtyeight')
 
 from datetime import datetime
