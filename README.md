@@ -17,4 +17,4 @@ Git repository URL: https://github.com/emilysmtan/ForexMonitoring
 
 With reference from: 
 https://www.kdnuggets.com/2018/11/keras-long-short-term-memory-lstm-model-predict-stock-prices.html
-https://www.youtube.com/results?search_query=stock+prediction+machine+learning
+
