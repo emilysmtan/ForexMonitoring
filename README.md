@@ -8,7 +8,7 @@ Automate python scripts which hourly (on weekdays only) retrieve forex intraday 
 The automation process is setup at a VPS (Virtual Private server) which is updated every hourly into a excel spreadsheet.
 
 Finally perform data analysis of the forecast vs actual models through powerBI DAX, charts and visualization. 
-Charts to derive insights to determine which time/day-range (morning, late morning, afternoon, night) has the most accuracy. 
+Charts to derive insights and determine which time/day-range (morning, late morning, afternoon, night) has the most accuracy. 
 
 Also, there is a daily monitoring stack chart to visualize the breakdown of the prediction accuracy based on total number of correct, wrong and no change.  Of course, there is a slicer to adjust how we wanted to view the breakdown - daily, monthly or yearly. 
 
