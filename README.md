@@ -22,6 +22,6 @@ I have provided a copy of my script. For the API key, please retrieve it from Al
 With reference from: 
 https://www.kdnuggets.com/2018/11/keras-long-short-term-memory-lstm-model-predict-stock-prices.html
 
-If you have comments and feedback, pls drop me a an email at emilysmtan@hotmail.com. 
+If you have comments and feedback, pls drop me an email at emilysmtan@hotmail.com. 
 
 Disclaimer: The stock market is pretty volatile. This machine learning definitely has potential for being used but as far as it is concerned, it is only experimental and I wouldn't really recommend to make decisionsm merely based on a simple framework.
