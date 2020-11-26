@@ -1,3 +1,8 @@
+
+******** IF You need this script, pls be in touch *********
+***********************************************************
+
+
 #Import the libraries
 from sklearn.preprocessing import MinMaxScaler
 from keras.models import Sequential
@@ -61,12 +66,8 @@ x_train, y_train = np.array(x_train), np.array(y_train)
 x_train = np.reshape(x_train, (x_train.shape[0], x_train.shape[1], 1))
 ##x_train.shape
 
-## Build the LSTM model
-model = Sequential()
-model.add(LSTM(50, return_sequences=True, input_shape=(x_train.shape[1], 1)))
-model.add(LSTM(50, return_sequences=False))
-model.add(Dense(25))
-model.add(Dense(1))
+
+
 
 #Compile the model
 model.compile(optimizer='adam', loss='mean_squared_error')
@@ -74,14 +75,6 @@ model.compile(optimizer='adam', loss='mean_squared_error')
 #Train the model
 model.fit(x_train, y_train, batch_size=1, epochs=1)
 
-#Create the testing dataset
-#Create a new array containing scaled values from index to 39940
-test_data = scaled_data[training_data_len - 60: , :]
-#Create the data sets x_test and y_test
-x_test = []
-y_test = dataset[training_data_len:, :]
-for i in range(60, len(test_data)):
-    x_test.append(test_data[i-60:i,0])
 
 #Convert the data to a numpy array so that can be used in the LSTM model
 x_test = np.array(x_test)
