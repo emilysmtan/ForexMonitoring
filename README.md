@@ -17,7 +17,7 @@ ii) Accuracy percentage (shown in powerBI)
 iii) Accuracy percentage based on time range (shown in powerBI). 
 iv) Profit / Loss breakdown after calculating the delta btwn profit (+ve) and loss (-ve).
 
-I have provided a copy of my script. For the forex API key, please retrieve it from Alpha vantage https://www.alphavantage.co/. It is free but you have to sign up with your email.
+I have provided a sample copy my script/work. For the forex API key, please retrieve it from Alpha vantage https://www.alphavantage.co/. It is free but you have to sign up with your email.
 
 With reference from: 
 https://www.kdnuggets.com/2018/11/keras-long-short-term-memory-lstm-model-predict-stock-prices.html
