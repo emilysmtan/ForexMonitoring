@@ -8,14 +8,14 @@ Automate python scripts which hourly (on weekdays only) retrieve forex intraday 
 The automation process is setup at a VPS (Virtual Private server) which is updated every hourly the dataset into a excel spreadsheet via a task scheduler.
 
 Finally perform data analysis of the forecast vs actual models through powerBI DAX, charts and visualization. 
-Charts to derive insights and determine which time/day-range (morning, late morning, afternoon, night) has the most accuracy. 
-
-Also, there is a daily monitoring stack chart to visualize the breakdown of the prediction accuracy based on total number of correct, wrong and no change.  Of course, there is a slicer to adjust how we wanted to view the breakdown - daily, monthly or yearly. 
+Charts to derive insights and a daily monitoring stack chart to visualize the breakdown of the prediction accuracy based on total number of correct, wrong and no change. 
+Also, there is analytics to determine which time/day-range (morning, late morning, afternoon, night) has the most accuracy. Of course, there is a slicer to adjust how we wanted to view the breakdown - daily, monthly or yearly. 
 
 Performance metric measurement includes:
-i) RMSE (not shown in powerBI)
+i) RMSE
 ii) Accuracy percentage (shown in powerBI)
 iii) Accuracy percentage based on time range (shown in powerBI). 
+iv) Profit / Loss breakdown after calculating the delta btwn profit (+ve) and loss (-ve).
 
 I have provided a copy of my script. For the forex API key, please retrieve it from Alpha vantage https://www.alphavantage.co/. It is free but you have to sign up with your email.
 
